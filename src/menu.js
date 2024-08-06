@@ -1,6 +1,6 @@
 import melon from "./images/melon.png";
 import peach from "./images/peach.png";
-import pear from "./images/pear.png";
+import mango from "./images/mango.png";
 import pineapple from "./images/pineapple.png";
 import plum from "./images/plum.png";
 import watermelon from "./images/watermelon.png";
@@ -24,33 +24,33 @@ export default function menu() {
     "1.00"
   );
 
-  const pearMenu = createMenu(
-    "Pear",
-    "If your favorite fruit is peach, this will be a perfect choice.",
+  const mangoMenu = createMenu(
+    "Mango",
+    "If your favorite fruit is mango, this will be a perfect choice.",
     "1.00"
   );
 
   const pineappleMenu = createMenu(
     "Pineapple",
-    "If your favorite fruit is peach, this will be a perfect choice.",
+    "If your favorite fruit is pineapple, this will be a perfect choice.",
     "1.00"
   );
 
   const plumMenu = createMenu(
     "Plum",
-    "If your favorite fruit is peach, this will be a perfect choice.",
+    "If your favorite fruit is plum, this will be a perfect choice.",
     "1.00"
   );
 
   const watermelonMenu = createMenu(
     "Watermelon",
-    "If your favorite fruit is peach, this will be a perfect choice.",
+    "If your favorite fruit is watermelon, this will be a perfect choice.",
     "1.00"
   );
 
   menuDiv.appendChild(melonMenu);
   menuDiv.appendChild(peachMenu);
-  menuDiv.appendChild(pearMenu);
+  menuDiv.appendChild(mangoMenu);
   menuDiv.appendChild(pineappleMenu);
   menuDiv.appendChild(plumMenu);
   menuDiv.appendChild(watermelonMenu);
@@ -68,8 +68,8 @@ function createMenu(name, description, price) {
     image.src = plum;
   } else if (name.toLowerCase() === "pineapple") {
     image.src = pineapple;
-  } else if (name.toLowerCase() === "pear") {
-    image.src = pear;
+  } else if (name.toLowerCase() === "mango") {
+    image.src = mango;
   } else if (name.toLowerCase() === "watermelon") {
     image.src = watermelon;
   }

@@ -14,6 +14,7 @@ export default function home() {
   fruitImage.classList.add("home-image");
 
   const para2 = document.createElement("p");
+  para2.classList.add("bold");
   para2.innerText = "Order online!";
 
   newDiv.appendChild(para);
