@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.5;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   display: grid;
-  background-image: url("./images/strawberry.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+  background-color: aquamarine;
   color: white;
 }
 
@@ -50,6 +52,7 @@ nav {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu {

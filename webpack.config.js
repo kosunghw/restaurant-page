@@ -4,8 +4,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   devtool: "inline-source-map",
+  devServer: {
+    static: "./dist",
+  },
   output: {
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
@@ -25,4 +28,7 @@ module.exports = {
       template: "./src/index.html",
     }),
   ],
+  optimization: {
+    runtimeChunk: "single",
+  },
 };

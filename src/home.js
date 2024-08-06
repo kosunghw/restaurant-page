@@ -7,7 +7,7 @@ export default function home() {
   const newDiv = document.createElement("div");
 
   const para = document.createElement("p");
-  para.innerText = "Rachel's Stickers offers best stickers in the city";
+  para.innerText = "Aelene offers best stickers in the city";
 
   const fruitImage = new Image();
   fruitImage.src = Fruits;
